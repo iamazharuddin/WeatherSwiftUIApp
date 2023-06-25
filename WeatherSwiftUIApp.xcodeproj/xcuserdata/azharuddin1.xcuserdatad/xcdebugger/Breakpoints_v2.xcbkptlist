@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CBE81F4D-2350-4874-9A58-DEE8ACCBC81D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02FB3D95-DC14-4452-9C22-1EC96FB21EEF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../WeatherApp/WeatherApp/WeatherApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchWeather()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "02FB3D95-DC14-4452-9C22-1EC96FB21EEF - 2c7a8e0ddae4cd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WeatherSwiftUIApp.WeatherAPIClient.fetchWeather() async throws -&gt; ()"
+                  moduleName = "WeatherSwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azharuddin1/Documents/iOS/WeatherApp/WeatherApp/WeatherApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "02FB3D95-DC14-4452-9C22-1EC96FB21EEF - 2c7a8e0ddae4cf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WeatherSwiftUIApp.WeatherAPIClient.fetchWeather() async throws -&gt; ()"
+                  moduleName = "WeatherSwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azharuddin1/Documents/iOS/WeatherApp/WeatherApp/WeatherApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "02FB3D95-DC14-4452-9C22-1EC96FB21EEF - 2c7a8e0ddae4cf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WeatherSwiftUIApp.WeatherAPIClient.fetchWeather() async throws -&gt; ()"
+                  moduleName = "WeatherSwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azharuddin1/Documents/iOS/WeatherApp/WeatherApp/WeatherApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "932">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,8 +1,8 @@
 //
-//  WeatherSwiftUIAppApp.swift
-//  WeatherSwiftUIApp
+//  WeatherAppApp.swift
+//  WeatherApp
 //
-//  Created by Azharuddin 1 on 25/06/23.
+//  Created by Azharuddin 1 on 27/03/23.
 //
 
 import SwiftUI

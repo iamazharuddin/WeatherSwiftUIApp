@@ -1,21 +1,47 @@
 //
 //  ContentView.swift
-//  WeatherSwiftUIApp
+//  WeatherApp
 //
-//  Created by Azharuddin 1 on 25/06/23.
+//  Created by Azharuddin
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @StateObject private var weatherAPIClient = WeatherAPIClient()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .center, spacing: 10) {
+            Spacer()
+            if let currentWeather = weatherAPIClient.currentWeather  {
+                Text(currentWeather.cityName)
+                    .font(.largeTitle)
+                    .foregroundColor(.blue)
+                HStack(alignment: .center, spacing: 16) {
+                 
+                    currentWeather.weatherCode.image
+                        .font(.largeTitle)
+                    Text("\(currentWeather.temperature)º")
+                        .font(.largeTitle)
+                }
+                Text(currentWeather.weatherCode.description)
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+            } else {
+                Text("No weather info available yet.\nTap on refresh to fetch new data.\nMake sure you have enabled location permissions for the app.")
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                Button("Refresh", action: {
+                    Task {
+                       try  await weatherAPIClient.fetchWeather()
+                    }
+                })
+            }
+            Spacer()
         }
-        .padding()
+        .onAppear {
+            Task {
+                try await weatherAPIClient.fetchWeather()
+            }
+        }
     }
 }
 
